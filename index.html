@@ -205,7 +205,7 @@ body {
     <button class="big-toggle before active" id="btn-before" onclick="setView('before')">
       <span class="toggle-dot"></span>
       Before
-      <span class="toggle-count" id="cnt-before">6</span>
+      <span class="toggle-count" id="cnt-before">7</span>
     </button>
     <button class="big-toggle after" id="btn-after" onclick="setView('after')">
       <span class="toggle-dot"></span>
@@ -235,6 +235,7 @@ const P = [
   {id:'oyate',    name:'The Oyate Group',            lat:40.8138, lng:-73.9292, addr:'276 Grand Concourse, Bronx',             type:'Workforce Dev & Community Organizing',               cat:'Workforce', phase:'before', zone:'Bronx'},
   {id:'bronxbp',  name:'Bronx Borough President',   lat:40.8262, lng:-73.9236, addr:'851 Grand Concourse, Bronx',             type:'Government / Public Sector Ally',                    cat:'Civic',     phase:'before', zone:'Bronx'},
   {id:'hope',     name:'The HOPE Program',           lat:40.8211, lng:-73.8850, addr:'1360 Garrison Ave, Hunts Point',         type:'Clean Energy Workforce Training',                    cat:'Workforce', phase:'before', zone:'Bronx'},
+  {id:'hba',      name:'Harlem Business Alliance',   lat:40.8078, lng:-73.9458, addr:'275 Lenox Ave, Harlem',                  type:'Research target (Never activated) · Lillian Project alignment (NYCHA 2024)', cat:'Civic', phase:'before', zone:'Harlem'},
   // AFTER — additions
   {id:'living',   name:'Living Redemption',          lat:40.8096, lng:-73.9523, addr:'302 W 124th St, Central Harlem',         type:'Credible Messenger Mentorship · Youth Justice',      cat:'Justice',   phase:'after',  zone:'Harlem'},
   {id:'marc',     name:'MARC',                       lat:40.8078, lng:-73.9476, addr:'Multi Assistance Resource Centers, Harlem', type:'Peer-run Community Support · Crisis Navigation', cat:'Workforce', phase:'after',  zone:'Harlem'},
@@ -261,6 +262,7 @@ const ZONE_COLOR = {
   before: {
     Manhattan: '#1e3a5f',  // deep navy blue
     Bronx:     '#9a3412',  // burnt sienna
+    Harlem:    '#4a4438',  // muted grey/brown for research target
   },
   after: {
     Harlem:    '#15803d',  // forest green
@@ -406,6 +408,7 @@ legend.onAdd = function() {
     <div class="legend-title">Location Key</div>
     <div class="legend-item"><div class="ld" style="background:#1e3a5f"></div>Existing · Manhattan</div>
     <div class="legend-item"><div class="ld" style="background:#9a3412"></div>Existing · Bronx</div>
+    <div class="legend-item"><div class="ld" style="background:#4a4438"></div>Existing · Harlem (Research)</div>
     <hr class="legend-divider">
     <div class="legend-item"><div class="ld" style="background:#15803d"></div>New · Harlem</div>
     <div class="legend-item"><div class="ld" style="background:#6b21a8"></div>New · Manhattan</div>
